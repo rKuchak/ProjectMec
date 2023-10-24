@@ -1,0 +1,42 @@
+a:link {
+text-decoration: none;
+color: #999966;
+}
+a:visited {
+color: #999966;
+text-decoration: none;
+}
+a:hover {
+text-decoration: underline;
+color: #006600;
+}
+a:active {
+text-decoration: underline;
+}
+
+.idrmain {
+FONT-SIZE: 9px; COLOR: #003300; FONT-FAMILY: Verdana, Arial,
+Helvetica, sans-serif; TEXT-ALIGN: none
+
+}
+.titulos {
+FONT-WEIGHT: bolder; FONT-SIZE: 12px; TEXT-TRANSFORM:
+capitalize; COLOR: #666666; FONT-STYLE: normal; FONT-FAMILY: Verdana,
+Arial, Helvetica, sans-serif
+}
+.links {
+FONT-SIZE: 9px; COLOR: #999999; FONT-FAMILY: Verdana, Arial,
+Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+
+
+.form {
+BORDER-RIGHT: #666666 1px solid; BORDER-TOP: #666666 1px solid;
+FONT-SIZE: 9px; BORDER-LEFT: #666666 1px solid; COLOR: #336699;
+BORDER-BOTTOM: #666666 1px solid; FONT-STYLE: normal; FONT-FAMILY:
+Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff
+}
+.impressao {
+FONT-SIZE: 12px; COLOR: #003000; FONT-FAMILY: Verdana, Arial,
+Helvetica, sans-serif
+}

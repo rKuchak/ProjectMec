@@ -1,0 +1,59 @@
+.btn-tela{
+    height: 200px;
+    width: 200px;
+    font-size: 20px;
+    color: #006400;
+    background-color: #F0FFF0;
+    cursor: pointer;
+    border-radius: 2px;
+
+    display: inline-block;
+    text-align: center;
+
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid #00AD46;
+    padding: .55rem .75rem;
+    transition: all .15s ease-in-out;
+    margin: 0;
+
+}
+
+.btn-tela:hover{
+    color: #fff;
+    background: #02D557;
+}
+
+.btn-tela2{
+    height: 200px;
+    width: 200px;
+    font-size: 20px;
+    color: #0000CD;
+    background-color: #CAE1FF;
+    cursor: pointer;
+    border-radius: 2px;
+
+    display: inline-block;
+    text-align: center;
+
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid #0000CD;
+    padding: .55rem .75rem;
+    transition: all .15s ease-in-out;
+    margin: 0;
+
+}
+
+.btn-tela2:hover{
+    color: #fff;
+    background: #0000CD;
+}

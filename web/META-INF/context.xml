@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/ProjectDefault">
+    <Resource
+        auth="Container"
+        name="jdbc/  "
+        type="javax.sql.DataSource"
+        driverClassName="com.mysql.jdbc.Driver"
+        password="  "
+        username="  "
+        url="jdbc:mysql://    ?useSSL=false"
+        maxActive="300"
+        initialSize="10"
+        maxIdle="20"
+        minIdle="5"
+        maxWait="10000"
+        removeAbandoned="true"
+        removeAbandonedTimeout="60"
+        logAbandoned = "true"
+        poolPreparedStatements="true"
+        maxOpenPreparedStatements="600" />
+</Context>

@@ -1,0 +1,97 @@
+body {  
+font-family: Arial, Helvetica, sans-serif;
+font-size: 15pt;
+background: #ffffff;
+color: #000000;
+margin: 0;
+padding: 0;
+}
+
+a:link, a:visited {
+color: #666;
+text-decoration: underline;
+font-weight: bold;
+background: transparent;
+}
+
+#content {
+margin: 10px;
+padding: 0;
+background: transparent;
+border: none;
+}
+#content form {
+font-size: 10pt;
+}
+#content table {
+font-size: 10pt;
+}
+
+h1, h2, h3, h4, h5, h6 {
+color: #000;
+}
+h1 {
+border-bottom: 2px solid #666;
+}
+
+#content form {
+font-size: 10pt;
+}
+#content .exemplo {
+background: transparent;
+border: none;
+}
+#content .exemplo pre {
+font-size: 10pt;
+background: transparent;
+
+}
+#content .exemplo .cor {
+font-size: 10pt;
+background: transparent;
+}
+#content .exemplo table {
+font-size: 10pt;
+}
+
+#content .exemplo form {
+font-size: 10pt;
+}
+#content .exemplo form fieldset p{
+font-size: 10pt;
+}
+
+#content ul {
+list-style: disc outside none;
+}
+#content ul li {
+padding-bottom: 0.5em;
+}
+#content ul ul li {
+list-style: disc outside none;
+}
+
+#content #titulo {
+font-size: 8pt;
+color: #666;
+}
+
+#header, 
+#left, 
+#right, 
+#footer, 
+#skip,
+#proxima,
+#print,
+#right .hide,
+#left .hide,
+#content .hide {
+display: none;
+visibility: hidden;
+}
+
+
+
+
+
+

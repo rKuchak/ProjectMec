@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+
+-->
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_3.dtd">
+
+
+<struts-config>
+    <form-beans>
+        <form-bean name="PessoaFisicaModel"                                     type="com.app.model.PessoaFisicaModel"/>
+        <form-bean name="LoginModel"                                            type="com.app.model.LoginModel"/>
+        <form-bean name="SenhaModel"                                            type="com.app.model.SenhaModel"/>
+        <form-bean name="VeiculoModel"                                          type="com.app.model.VeiculoModel"/>
+        <form-bean name="ControleVendasModel"                                   type="com.app.model.ControleVendasModel"/>
+        <form-bean name="ShakenModel"                                           type="com.app.model.ShakenModel"/>
+        <form-bean name="RelatorioModel"                                        type="com.app.model.RelatorioModel"/>
+        <form-bean name="RelatorioVendaVeiculoModel"                            type="com.app.model.RelatorioVendaVeiculoModel"/>
+        <form-bean name="RelatorioShakenVeiculoModel"                           type="com.app.model.RelatorioShakenVeiculoModel"/>
+        <form-bean name="ControleFinanceiroModel"                               type="com.app.model.ControleFinanceiroModel"/>
+    </form-beans>
+    
+    <global-exceptions>
+    
+    </global-exceptions>
+
+    <global-forwards>
+    </global-forwards>
+
+    <action-mappings>
+        
+        <action path="/Login"
+                type="com.app.action.LoginAction"
+                name="LoginModel"
+                scope="request">
+            
+            <forward name="page"                       path="/login.jsp"/>
+            <forward name="erroLogin"                  path="/login.jsp"/>
+            <forward name="sucessoLogin"               path="/tela_inicial.jsp"/>
+        </action>  
+        
+        <action path="/PessoaFisica"
+                type="com.app.action.PessoaFisicaAction"
+                name="PessoaFisicaModel"
+                scope="request">
+        
+            <forward name="page"                        path="/pessoa_fisica.jsp"/>
+            <forward name="save"                        path="/pessoa_fisica.jsp"/>
+            <forward name="pagePesquisa"                path="/pessoa_fisica_pesquisar.jsp"/>
+            <forward name="pesquisar"                   path="/pessoa_fisica_pesquisar.jsp"/>
+            <forward name="pageEditar"                  path="/pessoa_fisica_editar.jsp"/>
+            <forward name="atualizar"                   path="/pessoa_fisica_editar.jsp"/>
+            <forward name="excluir"                     path="/pessoa_fisica_pesquisar.jsp"/>
+            <forward name="visualizar"                  path="/pessoa_fisica_visualizar.jsp"/>
+        </action>
+        
+        <action path="/Senha"
+                type="com.app.action.SenhaAction"
+                name="SenhaModel"
+                scope="request">
+            
+            <forward name="pageAlterarSenha"           path="/alterar_senha.jsp"/>
+            <forward name="alterarSenha"               path="/alterar_senha.jsp"/>
+        </action>  
+        
+        <action path="/TipoVeiculo"
+                type="com.app.action.TipoVeiculoAction"
+                name="VeiculoModel"
+                scope="request">
+            
+            <forward name="page"                        path="/tipo_veiculo.jsp"/>
+            <forward name="save"                        path="/tipo_veiculo.jsp"/>
+            <forward name="excluir"                     path="/tipo_veiculo.jsp"/>
+        </action>  
+        
+        <action path="/MarcaVeiculo"
+                type="com.app.action.MarcaVeiculoAction"
+                name="VeiculoModel"
+                scope="request">
+            
+            <forward name="page"                        path="/marca_veiculo.jsp"/>
+            <forward name="save"                        path="/marca_veiculo.jsp"/>
+            <forward name="excluir"                     path="/marca_veiculo.jsp"/>
+        </action> 
+         
+        <action path="/NomeVeiculo"
+                type="com.app.action.NomeVeiculoAction"
+                name="VeiculoModel"
+                scope="request">
+            
+            <forward name="page"                        path="/nome_veiculo.jsp"/>
+            <forward name="carregarMarcaVeiculo"        path="/nome_veiculo.jsp"/>
+            <forward name="carregarVeiculoPorMarca"     path="/nome_veiculo.jsp"/>
+            <forward name="save"                        path="/nome_veiculo.jsp"/>
+            <forward name="excluir"                     path="/nome_veiculo.jsp"/>
+        </action>  
+        
+        <action path="/ControleVendas"
+                type="com.app.action.ControleVendasAction"
+                name="ControleVendasModel"
+                scope="request">
+            
+            <forward name="page"                        path="/controle_vendas_page.jsp"/>
+            <forward name="carregarMarcaVeiculo"        path="/controle_vendas_page.jsp"/>
+            <forward name="carregarVeiculos"            path="/controle_vendas_page.jsp"/>
+            <forward name="validarVeiculo"              path="/controle_vendas_page.jsp"/>
+            <forward name="save"                        path="/controle_vendas_page.jsp"/>
+            <forward name="pesquisarVeiculosVenda"      path="/controle_vendas_pesquisar.jsp"/>
+            <forward name="carregarMarcaVeiculoP"       path="/controle_vendas_pesquisar.jsp"/>
+            <forward name="carregarVeiculosP"           path="/controle_vendas_pesquisar.jsp"/>
+            <forward name="pesquisarVeiculos"           path="/controle_vendas_pesquisar.jsp"/>
+            <forward name="detalhesVeiculo"             path="/controle_vendas_detalhes.jsp"/>
+            <forward name="pageAtualizar"               path="/controle_vendas_atualizar.jsp"/>
+            <forward name="atualizar"                   path="/controle_vendas_atualizar.jsp"/>
+            <forward name="excluir"                     path="/controle_vendas_pesquisar.jsp"/>
+            <forward name="pageParcela"                 path="/controle_vendas_parcelas.jsp"/>
+            <forward name="atualizarPacela"             path="/controle_vendas_parcelas.jsp"/>
+        </action>  
+        
+        <action path="/Shaken"
+                type="com.app.action.ShakenAction"
+                name="ShakenModel"
+                scope="request">
+            
+            <forward name="page"                        path="/shaken_page.jsp"/>
+            <forward name="carregarMarcaVeiculo"        path="/shaken_page.jsp"/>
+            <forward name="carregarVeiculos"            path="/shaken_page.jsp"/>
+            <forward name="validarVeiculo"              path="/shaken_page.jsp"/>
+            <forward name="salvarShaken"                path="/shaken_page.jsp"/>
+            <forward name="pageControle"                path="/shaken_page_controle.jsp"/>
+            <forward name="pesquisarShaken"             path="/shaken_page_controle.jsp"/>
+            <forward name="excluirShaken"               path="/shaken_page_controle.jsp"/>
+            <forward name="editarPagamentoShaken"       path="/shaken_editar_pagamento.jsp"/>
+            <forward name="atualizarParcelaShaken"      path="/shaken_editar_pagamento.jsp"/>
+        </action> 
+        
+        
+        <action path="/Relatorio"
+                type="com.app.action.RelatorioAction"
+                name="RelatorioModel"
+                scope="request">
+            
+            <forward name="relPessoasCadastradasPage"           path="/rel_pessoas_cadastradas_page.jsp"/>
+            <forward name="relPessoasCadastradas"               path="/rel_pessoas_cadastradas.jsp"/>
+            <forward name="filtrarRelPessoa"                    path="/rel_pessoas_cadastradas.jsp"/>
+            <forward name="relVeiculosCadatrados"               path="/rel_veiculos_cadastrados.jsp"/>
+            <forward name="filtrarRelVeiculo"                   path="/rel_veiculos_cadastrados.jsp"/>
+            
+        </action> 
+        
+        <action path="/RelatorioVendaVeiculo"
+                type="com.app.action.RelatorioVendaVeiculoAction"
+                name="RelatorioVendaVeiculoModel"
+                scope="request">
+            
+            <forward name="relVendasVeiculosRealizadasPage"             path="/rel_venda_veiculo_page.jsp"/>
+            <forward name="relVendasVeiculosRealizadas"                 path="/rel_venda_veiculo.jsp"/>
+            <forward name="relParcelasPagasPage"                        path="/rel_parcela_paga_page.jsp"/>
+            <forward name="relParcelasPagas"                            path="/rel_parcela_paga.jsp"/>
+        </action> 
+        
+        <action path="/RelatorioShakenVeiculo"
+                type="com.app.action.RelatorioShakenVeiculoAction"
+                name="RelatorioShakenVeiculoModel"
+                scope="request">
+            
+            <forward name="relShakenRealizadasPage"             path="/rel_shaken_veiculo_page.jsp"/>
+            <forward name="relShakenRealizadas"                 path="/rel_shaken_veiculo.jsp"/>
+            <forward name="relShakenVencerPage"                 path="/rel_shaken_vencer_page.jsp"/>
+            <forward name="relShakenVencer"                     path="/rel_shaken_vencer.jsp"/>
+            
+        </action> 
+        
+        <action path="/ControleFinanceiro"
+                type="com.app.action.ControleFinanceiroAction"
+                name="ControleFinanceiroModel"
+                scope="request">
+            
+            <forward name="pageAdicionar"                       path="/controle_financeiro_adicionar.jsp"/>
+            <forward name="adicionar"                           path="/controle_financeiro_adicionar.jsp"/>
+            <forward name="excluir"                             path="/controle_financeiro_adicionar.jsp"/>
+            <forward name="pagePesquisar"                       path="/controle_financeiro_pesquisar.jsp"/>
+            <forward name="pesquisar"                           path="/controle_financeiro_pesquisar.jsp"/>
+            <forward name="excluirPorMes"                       path="/controle_financeiro_pesquisar.jsp"/>
+            <forward name="paginacao"                           path="/controle_financeiro_paginacao.jsp"/>
+            <forward name="pageComparacao"                      path="/controle_financeiro_comparacao.jsp"/>
+            <forward name="compararMeses"                       path="/controle_financeiro_comparacao.jsp"/>
+            
+        </action> 
+        
+        
+    </action-mappings>
+    
+    <controller processorClass="org.apache.struts.tiles.TilesRequestProcessor"/>
+
+    <message-resources parameter="com/myapp/struts/ApplicationResource"/>    
+    
+  
+    <plug-in className="org.apache.struts.tiles.TilesPlugin" >
+        <set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml" />      
+        <set-property property="moduleAware" value="true" />
+    </plug-in>
+    
+    <!-- ========================= Validator plugin ================================= -->
+    <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+        <set-property
+            property="pathnames"
+            value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml"/>
+    </plug-in>
+  
+</struts-config>

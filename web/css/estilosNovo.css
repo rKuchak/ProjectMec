@@ -1,0 +1,257 @@
+body{ margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; padding: 0; color: black; font-size: 10pt; font-family: "lato", sans-serif; background-color: #E2E2E2;} div.mainContainer{ height: auto; width: 68em; background-color: #FFFFFF; margin: 0 auto; padding: 0;} 
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td { margin:0; padding:0; border:0; outline:0; font-weight:inherit; font-style:inherit; font-size:100%; font-family:"lato"; vertical-align: text-top; }
+:focus { outline:0; }
+a:active { outline:none; }
+body { line-height:1; color:black; background:white; }
+ol,ul { list-style:none; }
+/*id*/
+#all{
+    width: 1000px;
+    min-height: 600px;
+    height: auto;
+    margin: auto;
+}
+#topo{
+    background-color: #e9eaeb;
+    width: 100%;
+    height: 100px;
+}
+#logoTopo{
+    margin-left: -18px;
+    width: 350px;
+}
+#loginTopo{
+    float: right;
+    margin-top: 8px;
+    margin-right: 80px;
+}
+#BannerAnunciante{
+    width: 728px;
+    height: 90px;
+    margin-top: 10px;
+}
+#BannerAnunciante2{
+    float: right;
+}
+#menu{
+    width: 100%;
+    margin-top: 10px;
+    height: 55px;
+}
+#banner{
+    width: 100%;
+   /* height: 205px; */ /*Altura utilizada para Banner completo!!*/ 
+    height: auto;    /*Altura utilizada para Banner somente com thumbs!!*/ 
+    margin-top: 5px;
+}
+#noticias{
+    float: left;
+    height: auto;
+    width: 665px;
+    margin-top: 5px;
+}
+#topVagas{
+    float: right;
+    width: 330px;
+    height: auto;
+    min-height: 720px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+#enquete{
+    float: left;
+    width: 330px;
+    height: auto;
+    min-height: 300px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#unidades{
+    float: left;
+    width: 330px;
+    min-height: 300px;
+    height: auto;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+#rodape{
+    position: relative;
+    background-color: #e9eaeb;
+    width: 100%;
+    height: 20px;
+    clear:both;
+    background: -webkit-linear-gradient(rgba(52, 76, 94, 0.66), rgb(252, 255, 253)); /* Para Safari */
+    background: -o-linear-gradient(rgba(52, 76, 94, 0.66), rgb(252, 255, 253)); /* Para Opera 11.1 até 12.0 */
+    background: -moz-linear-gradient(rgba(52, 76, 94, 0.66), rgb(252, 255, 253)); /* Para Firefox 3.6 até 15 */
+    background: linear-gradient(rgba(52, 76, 94, 0.66), rgb(252, 255, 253)); /* comum (ultimo) */    
+}  
+#tabelarodape{
+    width: 1000px;
+    height: auto;
+    margin: auto;
+}
+#tabelarodape1{
+    width: 320px;
+    height: 300px;
+    margin: 10px;
+    margin-top: 20px;
+    float: left;    
+    text-align: center;
+    border-left: 1px solid;
+    
+}
+#tabelarodape2{
+    width: 320px;
+    height: 300px;
+    margin-top: 20px;
+    float: left;    
+    text-align: center;
+    border-left: 1px solid;
+}
+#tabelarodape3{
+    width: 320px;
+    height: 300px;
+    margin: 10px;
+    margin-top: 20px;
+    float: left;    
+    text-align: center;
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+#abaixorodape{
+    text-align: center;
+}
+#bannerlateral{
+    width: 120px;
+    height: 600px;
+    float: right;
+    margin-bottom: 5px;
+    margin-top: -82px
+}
+#imagempadrao{
+    width: 875px;
+    height: 82px;
+    background-image:url('../imagens/imgpadrao/topo_unidades.png'); 
+    background-repeat: no-repeat;
+}
+#imagempadrao2{
+    width: 875px;
+    height: 82px;
+    background-image:url('../imagens/imgpadrao/topo_franqueado.png'); 
+    background-repeat: no-repeat;
+}
+#imagempadrao3{
+    width: 875px;
+    height: 82px;
+    background-image:url('../imagens/imgpadrao/topo_empresa.png'); 
+    background-repeat: no-repeat;
+}
+#imagempadrao4{
+    width: 875px;
+    height: 82px;
+    background-image:url('../imagens/imgpadrao/topo_estagiario.png'); 
+    background-repeat: no-repeat;
+}
+#conteudoRodape{
+    width: 330px;
+    margin: auto;
+
+}
+#BannerTopoPaginaInterna{
+    width: 835px;
+    height: 168px;
+    margin-top: 10px;
+}
+#BannerLateralPaginaInterna{
+    width: 120px;
+    height: 600px;
+    float: right;
+    margin-bottom: 5px;
+    margin-top: -168px
+}
+/*Class*/
+.textos16{
+    font-size: 16px;
+    font-family: "lato";
+    vertical-align: middle;
+    color: black;
+}
+.textos20{
+    font-size: 20px;
+    font-family: "lato";
+    vertical-align: middle;
+    color: black;
+}
+.laranja20{
+    font-size: 20px;
+    font-family: "lato";
+    vertical-align: middle;
+    color: #e77e23;
+}
+.vermelho12{
+    font-size: 12px;
+    font-family: "lato";
+    vertical-align: middle;
+    color: red;
+}
+.vermelho14{
+    font-size: 14px;
+    font-family: "lato";
+    vertical-align: middle;
+    color: red;
+}
+.loginAbre{
+    font-size: 18px;
+    font-weight: bolder;
+    margin-left: 5px;
+    color: #34495e;
+    padding-left: 5px; 
+}
+.noticias {
+    padding-bottom: 20px;
+    color: black;
+}
+.noticiasTitulo {
+    font-size: 18px;
+    padding-bottom: 20px;
+    color: black;
+}
+.noticiasTexto {
+    font-size: 16px;
+    padding-bottom: 20px;
+    color: black;
+}
+.enquete {
+    font-size: 16px;
+    padding-bottom: 5px;
+    color: black;
+}
+.borda {
+    padding-bottom: 5px;
+    padding-left: 3px;
+    position: relative;
+    border-width: 0 0 4px 0;
+    border-bottom-style: solid;
+    text-transform: uppercase;
+    border-color: rgba(0, 0, 0, 0.63);
+    color: #076b37;
+}
+.oportunidades{
+    font-size: 16px;
+    color: black;
+}
+.chat {
+    position: fixed;
+    top: 248px;
+    width: 35px;
+    z-index: 100;
+    -moz-background-clip: border;
+    -moz-background-origin: padding;
+    -moz-background-inline-policy: continuous;
+    right: 0pt;
+}
+.botoescadastro :hover{
+            opacity: 0.7;
+}

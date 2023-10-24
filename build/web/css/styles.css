@@ -1,0 +1,107 @@
+body {  background-color: #ffffff;
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 12px; 
+color: #000000; 
+}
+.header 
+{
+width: 100%;
+background-color: Teal;
+}
+.data1 
+{ 
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 13px; 
+color: #000000; 
+background-color: #CCCCCC 
+}
+.data2 
+{ 
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 13px; 
+color: #000000; 
+background-color: #999999
+}
+a.headerlink 
+{
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 14px; 
+font-weight: bold; 
+color: #ffffff; 
+text-decoration: none
+}
+a.headerlink:hover 
+{
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 14px; 
+font-weight: bold; 
+color: #000000;
+text-decoration: none; 
+background-color: #ffffff; 
+text-align: center; 
+width: 100%
+}
+a.datalink 
+{
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 13px; 
+font-weight: bold; 
+color: #000000; 
+text-decoration: none
+}
+a.datalink:hover
+{
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 13px; 
+font-weight: bold; 
+color: #FFFFFF; 
+text-decoration: none; 
+background-color: #000000; 
+width: 100%
+}
+.fieldname 
+{  
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 12px; 
+color: #ffffff;
+background-color: Teal; 
+text-align: right
+}
+a.button 
+{  
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 12px; 
+font-weight: bold; 
+color: #000000; text-decoration: none; 
+background-color: #cccccc; 
+width: 100%; 
+text-align: center
+}
+a.button:hover 
+{
+font-family: Arial, Helvetica, sans-serif; font-size: 12px;
+font-size: 12px;
+font-weight: bold;
+color: #ffffff;
+text-decoration: none; 
+background-color: #000000; 
+width: 100%;
+text-align: center
+}
+.strip 
+{
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 14px; 
+font-weight: bold; 
+color: #FFFFFF; 
+background-color: Teal
+}
+.headertitle
+{
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 16px; 
+font-weight: bold; 
+color: #FFFFCC;
+} 
+ 
+ 
